@@ -111,20 +111,7 @@ button{
   100%{ transform: scale(1); filter: brightness(1); }
 }
 
-#camera-preview{
-  position:absolute;
-  top:14px;
-  right:14px;
-  width:120px;
-  height:90px;
-  border-radius:12px;
-  opacity:0.68;
-  transform: scaleX(-1);
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.55);
-  z-index:120;
-}
-
+/* video input ẩn */
 .input_video{ display:none; }
 
 #copyright{
