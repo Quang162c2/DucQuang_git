@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic Christmas - Smooth Edition</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="error-log"></div>
+
+  <div id="ui-layer">
+    <div class="hud">
+      <div class="title">✨ MAGIC CHRISTMAS ✨</div>
+      <div class="guide">
+        🖐 <b>Open</b>: Explode &nbsp;|&nbsp; 🫶 <b>Heart</b>: Love &nbsp;|&nbsp; ✊ <b>Fist</b>: Tree &nbsp;|&nbsp; 👌 <b>Pinch</b>: Photo
+        <span class="hint">(Phím: 1 Tree • 2 Explode • 3 Photo • 4 Heart)</span>
+      </div>
+
+      <div class="row">
+        <div id="status" class="badge">Ready</div>
+        <button id="btnStart">START MAGIC</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyright">© by vandiep • smooth build</div>
+
+  <div id="canvas-container"></div>
+  <video class="input_video" playsinline></video>
+  <canvas id="camera-preview" width="120" height="90"></canvas>
+
+  <script src="./app.js"></script>
+</body>
+</html>
